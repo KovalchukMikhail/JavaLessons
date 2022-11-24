@@ -41,14 +41,18 @@ public class view {
         String typeTwo = "(*" + c + ")";
         if(input.inputInt("Для вывода самого короткого сочетания команд введите '0' для вывода всех сочетаний '1'") == 0)
         {
-            str += Integer.toBinaryString(numbers.get(0)).substring(1).replace("1", typeTwo).replace("0", typeOne) + "\n";
+            str += Integer.toBinaryString(numbers.get(0)).substring(1).
+                                                    replace("0", "b").replace("1", "a").
+                                                    replace("a", typeTwo).replace("b", typeOne) + "\n";
             System.out.println("Самое короткое сочетание команд:\n" + str);
         }
         else
         {
             for (int i = 0; i < numbers.size(); i++)
             {
-                str += Integer.toBinaryString(numbers.get(i)).substring(1).replace("1", typeTwo).replace("0", typeOne) + "\n";
+                str += Integer.toBinaryString(numbers.get(i)).substring(1).
+                                                        replace("0", "b").replace("1", "a").
+                                                        replace("a", typeTwo).replace("b", typeOne) + "\n";
             }
             System.out.println("Возможные сочетания команд:\n" + str);
         }
