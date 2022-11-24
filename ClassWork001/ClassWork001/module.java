@@ -33,7 +33,6 @@ public class module {
                 numbers.add(i);
             }
             i++;
-            // System.out.println(currentNumber);
         }
         return numbers;
 
