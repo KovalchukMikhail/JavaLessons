@@ -1,7 +1,7 @@
 package HomeWork006;
 import java.util.ArrayList;
 
-public class Program {
+public class App {
     public static void main(String[] args) {
         Infrastructure infrastructure = new Infrastructure();
     
